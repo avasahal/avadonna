@@ -1,0 +1,392 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    font-family: 'Lato', sans-serif, Helvetica, Arial;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -ms-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+
+h1 {
+    font-weight:300;
+    font-size: 30px;
+}
+
+ul {
+    padding: 0;
+    margin:0;
+    list-style:none;
+}
+
+p {
+   font-weight:400;
+   font-size:16px;  
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.full {
+    width: 100%;
+}
+
+.box {
+    width:90%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.col2-exp {
+    width:50%;
+   
+}
+
+.fcol {
+    float:left;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.section-title h1 {
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 40px;
+
+}
+
+.sub-sep {
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin-top: 5px;
+
+}
+
+.sub-sep.light {
+    background-color: #fff;
+}
+
+.sub-sep.dark {
+    background-color:#515f67;
+}
+
+/* HEADER */
+
+header.header {
+    background: rgba(53, 63, 70, 0.82);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.site-logo {
+    display: inline-block;
+    width: 130px;
+    padding-top: 17px;
+}
+
+.site-logo h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 25px;
+}
+
+.site-logo span {
+    color: pink;
+}
+
+nav.site-nav {
+    display: inline-block;
+    width: calc(100% - 135px);
+    vertical-align: top;
+    padding: 29px 0px;
+}
+
+ul.site-menu {
+    text-align: right;
+    font-size: 13px;
+}
+
+ul.site-menu li {
+    display: inline-block;
+}
+ul.site-menu a {
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 2px dotted transparent;
+    color: pink;
+}
+
+ul.site-menu a:hover {
+    color: #fff;
+}
+
+ul.site-menu a.active-menu {
+    border-color: #fff;
+    color: #fff;
+}
+
+ul.site-menu a.active-menu:hover {
+    color: #fff;
+    background: #4bcaff;
+}
+
+
+/*SECTIONS*/
+
+/* HOME SECTION*/
+section.home {
+    background: url('img/background.png') no-repeat fixed;
+    background-size: cover;
+   
+}
+
+.home-container {
+    background: rgba(37, 44, 60, 0.61);
+    text-align: center;
+    padding:28% 0 28% 0;
+}
+
+.home-container h2 {
+    display: inline-block;
+    margin: 5px auto;
+    max-width: 90%;
+    padding: 10px 15px;
+    background: rgba(53, 63, 70, 0.85);
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.home-container h1 {
+    display: inline-block;
+    margin: 5px auto;
+    max-width: 90%;
+    padding: 10px 15px;
+    background: rgba(53, 63, 70, 0.85);
+    font-weight: 300;
+    color: pink;
+    font-size: 45px;
+}
+
+
+
+
+
+
+/* PROFILE SECTION*/
+
+section.profile {
+    background-color: #FFD2DA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.profile-container .section-title {
+    color: #353f46;
+}
+
+.profile-content {
+    padding-bottom:40px;
+}
+
+.profile-content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #353f46;
+}
+
+.profile-content p {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #353f46;
+}
+
+
+/* SKILLS SECTION */
+
+section.skills {
+    background-color: #252C3C;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.skills-content {
+    padding-bottom: 40px;
+}
+
+
+.skills-icons {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.icon {
+    opacity: 0.2;
+    transition: 0.4s;
+   
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.icon:hover {
+    opacity:1;
+    transition:1s;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+
+#picOne, #picTwo {
+    position: absolute;
+    display: none;
+}
+
+
+/* EDUCATION SECTION */
+
+section.education {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.education-content {
+    padding-bottom: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.education-container .section-title {
+    color: #353f46;
+}
+
+.education-content h2 {
+    color: #353f46;
+}
+
+.education-content h4 {
+    color: #353f46;
+}
+
+.education-content p {
+    color: #353f46;
+
+}
+
+.educ-icon {
+    opacity: 1;
+    transition: 0.4s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.educ-icon:hover {
+    height:200px;
+    width: 200px;
+
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+
+/* EXPERIENCE SECTION */
+
+section.experience {
+    background: url('img/background.png') no-repeat fixed;
+    padding-top: 60px;
+    padding-bottom: 45%;
+}
+
+.experience-content {
+    padding-top: 40px;
+
+}
+
+.experience-container .section-title {
+    color: #fff;
+}
+
+.experience-box {
+    border: 1px solid;
+    padding: 10px;
+    max-width: 80%;
+    margin: 20px;
+}
+
+.exp1, .exp2, .exp3, .exp4 {
+    min-height: 200px;
+    max-height:200px;
+}
+
+
+.experience-box h4 {
+    line-height:2px;
+}
+
+
+.experience-box h4 span {
+    color:pink;
+    font-size:20px;
+}
+
+
+/* CONTACT SECTION */
+
+
+section.contact {
+    background-color: #252C3C;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-container .section-title {
+    color: #fff;
+}
+
+
+/* FOOTER SECTION*/
+

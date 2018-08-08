@@ -1,0 +1,6 @@
+/Users/avasahal/Projects/AvaResume/AvaResume/bin/AvaResume.dll
+/Users/avasahal/Projects/AvaResume/AvaResume/bin/AvaResume.pdb
+/Users/avasahal/Projects/AvaResume/AvaResume/obj/Debug/AvaResume.csproj.CoreCompileInputs.cache
+/Users/avasahal/Projects/AvaResume/AvaResume/obj/Debug/AvaResume.dll
+/Users/avasahal/Projects/AvaResume/AvaResume/obj/Debug/AvaResume.pdb
+/Users/avasahal/Projects/AvaResume/AvaResume/obj/Debug/AvaResume.csprojResolveAssemblyReference.cache
