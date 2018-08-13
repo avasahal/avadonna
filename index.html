@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ava Sahal | Web Design &Aacute; Development</title>
+    <meta name="description" content="The web design portfolio of Ava Donna Sahal" />
+    <meta name="keywords" content="ava donna, ava sahal, ava, web, design, web design, portfolio, cv, websites, web developer, web development, freelance, responsive, mobile, development, developer, responsive development, fun, unique, personal, blog" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.0.0.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    if (this.page !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        var page = $(this).attr('href'); // Page cible
+                        var speed = 1000; // Durée de l'animation (en ms)
+                        $('html, body').animate( { scrollTop: $(page).offset().top }, speed, function(){
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.page = page;
+                        });
+                    }
+                });
+            });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!--<header class="header full">
+            <div class="header-container box">
+                <div class="site-logo">
+                    <a href="#home">
+                        <h1 itemprop="name"><span>A</span>VA</h1>
+                        <h1 itemprop="name"><span>D</span>ONNA</h1>
+                    </a>
+                </div>
+                <nav class="site-nav">
+                    <ul class="site-menu">
+                        <li class="a1">
+                            <a itemprop="url" title="Home" class="js-scrollTo" href="#home">Home</a>
+                        </li>
+                        <li class="a2">
+                            <a itemprop="url" title="Profile" class="js-scrollTo" href="#profile">Profile</a>
+                        </li>
+                        <li class="a3">
+                            <a itemprop="url" title="Skills" class="js-scrollTo" href="#skills">Skills</a>
+                        </li>
+                        <li class="a4">
+                            <a itemprop="url" title="Education" class="js-scrollTo" href="#education">Education</a>
+                        </li>
+                        <li class="a5">
+                            <a itemprop="url" title="Experience" class="js-scrollTo" href="#experience">Experience</a>
+                        </li>
+                        <li class="a6">
+                            <a itemprop="url" title="Contact" class="js-scrollTo" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>-->
+        <div class="site-content">
+            <section class="site-section home" id="home">
+                <div class="home-container">
+                    <div class="table">
+                        <div class="cell">
+                            <div>
+                                <h2 id="fadeIn2"></h2>
+                            </div>
+                            <div>
+                                <h1 id="fadeIn"></h1>
+                                <h3 id="fadeIn3"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#contact" class="js-scrollTo" id="contactBtn">CONTACT ME</a>
+                    </div>
+                </div>
+            </section>
+            <!--<section class="site-section profile" id="profile">
+                <div class="profile-container box">
+                    <div class="section-title">
+                        <h1>Profile</h1>
+                        <div class="sub-sep dark"></div>
+                    </div>
+                    <div class="profile-content">
+                        <h2>Ava Sahal</h2>
+                        <p>
+                            A web developer with a strong interest in projects that
+                            require both conceptual and analytical thinking.
+                            Fully- committed to designing and developing innovative
+                            web-based materials that users will love. Always eager
+                            to learn more tricks from anyone - regardless of the
+                            industry they're working in.
+                            <br />
+                            <br />
+                            I invite you to check out my website.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section skills" id="skills">
+                <div class="skills-container box">
+                    <div class="section-title">
+                        <h1>My Skills</h1>
+                        <div class="sub-sep light"></div>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skills-icons" data-animation="fade-in" onload="fadeIn">
+                            <img alt="Html" title="HTML" width="150px" src="img/html.png" class="icon" id="pic1"/>
+                            <img alt="Css" title="CSS" width="150px" src="img/css.png" class="icon" id="pic2"/>
+                            <img alt="JavaScript" title="JAVASCRIPT" width="150px" src="img/js.png" class="icon" id="pic3"/>
+                            <img alt="Angular" title="ANGULAR" width="150px" src="img/angular.png" class="icon" id="pic4"/>
+                            <img alt="SQL" title="SQL" width="150px" src="img/sql.png" class="icon" id="pic5"/>
+                            <img alt="CSharp" title="C#" width="150px" src="img/csharp.png" class="icon" id="pic6"/>
+                            <img alt="Angular" title="ANGULAR" width="150px" src="img/asp.net-MVC.png" class="icon" id="pic7"/>
+                            <img alt="JavaScript" title="JAVASCRIPT" width="150px" src="img/wordpress.png" class="icon" id="pic8"/>
+                            <img alt="SQL" title="SQL" width="150px" src="img/jquery.png" class="icon" id="pic9"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section education" id="education">
+                <div class="education-container box">
+                        <div class="section-title">
+                            <h1>Education</h1>
+                            <div class="sub-sep dark"></div>
+                        </div>
+                        <div class="education-content" style="text-align:center">
+                            <img alt="Education" title="Education" width="150px" src="img/education.png" class="educ-icon"/>
+                            <h2>Software Development - Sela College</h2>
+                            <h4>Ramat Gan, Israel</h4>
+                            <p><strong>Studied:</strong> .NET, C#, HTML and JavaScript, ASP.NET MVC 4,
+                                Angular2, Design Patterns , SQL, Data Structures in C#, Entity Framework 6,
+                                ADO.NET 2.0, LINQ
+                                <br />
+                                <br />
+                                <strong>Projects:</strong> Created a library system management with Windows 8
+                                in C#, vending machine program with WPF in C#, a shopping cart (yad2) with
+                                ASP.Net MVC, a shopping cart using Angular2, developed websites with HTML,
+                                CSS and JavaScript.
+                            </p>
+
+                            <br />
+                            <br />
+                            <br />
+
+                            <h2>BA of Business, major in Finance – Arison School of Business, IDC</h2>
+                            <h4>Herzliya, Israel</h4>
+
+                            <br />
+                            <br />
+                            <br />
+
+                            <h2>High School Diploma, with Principal Honors – Alonzo and Tracy Mourning Senior High</h2>
+                            <h4>Miami, USA</h4>
+                        </div>
+
+                </div>
+            </section>
+            <section class="site-section experience" id="experience">
+                <div class="experience-container box">
+                    <div class="section-title">
+                        <h1>Experience</h1>
+                        <div class="sub-sep light"></div>
+                    </div>
+                    <div class="experience-content col2-exp fcol">
+                        <div class="experience-box exp1">
+                            <h2>Web Developer, PURECODE</h2>
+                            <h4>Paris, France<span> 2017 - 2018</span></h4>
+                            <p>
+                                Developed the official application of the Embassy of the UNITED ARAB EMIRATES in Paris,
+                                "UAE French Travel Guide" using Apache Cordova framework.
+                                <br />
+                                Developed the back office using Angular.
+                                <br />
+                                Implemented the approved designs.
+                            </p>
+                        </div>
+                        <div class="experience-box exp2">
+                            <h2>Web Developer & Community Manager, Freelance</h2>
+                            <h4>Tel Aviv, Israel<span> 2017 - 2018</span></h4>
+                            <p>
+                                Created websites using WordPress (custom themes and existing themes).
+                                <br />
+                                Created and managed social media accounts (Facebook, Instagram and Google, SEO).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-content col2-exp fcol">
+                        <div class="experience-box exp3">
+                            <h2>Web Designer, Street Art Gallery: Urban Secret</h2>
+                            <h4>Tel Aviv, Israel<span> 2015 - 2016</span></h4>
+                            <p>
+                                Created website using WordPress.
+                                <br />
+                                Created and managed social media accounts (SEO, Facebook, Instagram and Google).
+                            </p>
+                        </div>
+                        <div class="experience-box exp4">
+                            <h2>Analyst Intern, MB Asset Management</h2>
+                            <h4>Herzliya, Israel<span> 2014 - 2015</span></h4>
+                            <p>
+                                Financial Analysis.
+                                <br />
+                                High yield debt and distressed securities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+            <section class="site-section contact" id="contact" style="background-color:#252C3C;">
+                <div class="contact-container box">
+                   
+                    <div>
+                        <div class="section-title" style="color:#fff">
+                            <h1>Contact</h1>
+                            <div class="sub-sep light"></div>
+                        </div>
+
+                        <div class="contact-content" style="text-align:center;">
+                            <h2>Have a question or want to work together?</h2>
+                            <h4>Ava Sahal</h4>
+                            <br />
+                            <div class="info-content" style="text-align:center;font-size:20px">
+                                <div class="phone-content">
+                                    <i class="fa fa-phone"></i>
+                                    +972 54 812 0740
+                                </div>
+                                <br />
+                                <div class="email-content">
+                                    <i class="fa fa-envelope"></i>
+                                    <a class="email-link" href="mailto:avasahal@gmail.com">avasahal@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contact" action="form-to-email.php" method="post">
+                                <h3>Quick Contact</h3>
+                                
+                                <fieldset>
+                                    <label for='name'>Enter Name: </label><br>
+                                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='email'>Enter Name: </label><br>
+                                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='phone'>Enter Name: </label><br>
+                                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='message'>Enter Name: </label><br>
+                                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="container-footer" id="footer" style="background-color:pink; text-align:center;padding-top:20px; padding-bottom:20px;">
+        <div class="container">
+            <div class="footer-icons">
+                <a href="http://www.linkedin.com/in/avasahal">
+                    <img alt="LinkedIn" title="LINKEDIN" width="40px" src="img/linkedin.png" />
+                </a>
+                <a href="http://www.facebook.com/avasahal">
+                    <img alt="Facebook" title="FACEBOOK" width="40px" src="img/facebook.png" />
+                </a>
+                <a href="http://www.twitter.com/avasahal">
+                    <img alt="twitter" title="TWITTER" width="40px" src="img/twitter.png" />
+                </a>
+                <a href="http://www.instagram.com/avasahal">
+                    <img alt="Instagram" title="INSTAGRAM" width="40px" src="img/instagram.png" />
+                </a>
+            </div>
+
+            <br />
+            <a href="www.avadonna.com">© 2018 - All Rights Reserved to www.avadonna.com.</a>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            var string = "AVA  DONNA";
+            var q = jQuery.map(string.split(''), function (letter) {
+                return $('<span>' + letter + '</span>');
+            });
+
+            var dest = $('#fadeIn');
+
+            var c = 0;
+            var i = setInterval(function () {
+                q[c].delay(1000).appendTo(dest).hide().fadeIn(200);
+                c += 1;
+                if (c >= q.length) clearInterval(i);
+            }, 200);
+        });
+    </script>
+    <script>
+        $(function () {
+            var string = "Web Developer";
+            var q = jQuery.map(string.split(''), function (letter) {
+                return $('<span>' + letter + '</span>');
+            });
+
+            var dest = $('#fadeIn3');
+
+            var c = 0;
+            var i = setInterval(function () {
+                q[c].delay(1000).appendTo(dest).hide().fadeIn(200);
+                c += 1;
+                if (c >= q.length) clearInterval(i);
+            }, 200);
+        });
+    </script>
+    <script>
+        $(function () {
+            var string = "COMING SOON";
+            var q = jQuery.map(string.split(''), function (letter) {
+                return $('<span>' + letter + '</span>');
+            });
+
+            var dest = $('#fadeIn2');
+
+            var c = 0;
+            var i = setInterval(function () {
+                q[c].appendTo(dest).hide().fadeIn(100);
+                c += 1;
+                if (c >= q.length) clearInterval(i);
+            }, 100);
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.icon').animate({ slideIn: '500' }, "slow");
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+
+    </script>
+
+
+</body>
+</html>
